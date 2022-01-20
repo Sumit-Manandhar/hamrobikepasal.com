@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="hamrobikepasal.com.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>admin page</title>
+  <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <style>
+        #foot{
+            background-color:#f8f9fa;
+            
+                   margin-top:25px;
+            bottom: 0;
+            width:100%;
+            text-align:center;
+            font-family:'Lucida Handwriting';
+        }
+          .cont{
+            width:50px;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <div class="container-fluid" style="z-index:5;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:25px;">
+  <a class="navbar-brand" href="#">
+      <div class="container-fluid">
+          <img src="../images/logos.jpg" style="width:192px; height:100px; padding:4px; margin-top:-14px;" />
+
+      </div>
+  </a>
+
+               <div>
+                   <div class="input-bar">
+    <div class="input-bar-item width100">
+
+                   <div class="form-group">
+                </div>
+        </div>
+                       <div class="input-bar-item">
+
+                   </div>
+                   </div>
+                   </div>
+                
+                 <div id="navbars" class="container">
+                     
+        
+
+                       </div>
+                </nav>
+            </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+        </div>
+        <div class="container" id="foot" style="margin-top:20%">
+            <h3>
+               hamrobikepasal.com
+            </h3>  <h5>follow us on social media</h5>
+           
+            <div>
+                <asp:ImageButton ID="ImageButton2" class="cont" runat="server" ImageURL="~/images/fb.png" OnClick="ImageButton2_Click"/>
+            <asp:ImageButton ID="ImageButton3" class="cont" runat="server" ImageURL="~/images/insta.png" OnClick="ImageButton3_Click" />
+            
+            </div>@copyright 2021
+        </div>
+    </form>
+</body>
+</html>
